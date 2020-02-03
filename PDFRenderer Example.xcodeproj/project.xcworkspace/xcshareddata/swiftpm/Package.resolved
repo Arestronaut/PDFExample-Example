@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftChart",
+        "repositoryURL": "https://github.com/Arestronaut/SwiftChart",
+        "state": {
+          "branch": "feature/add-spm-support",
+          "revision": "6b359061b16a2436d02d9a2953ff40fd83c598b9",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
