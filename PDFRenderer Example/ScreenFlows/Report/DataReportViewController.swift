@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class DataReportViewController: UIViewController {
+final class DataReportViewController: PDFRenderableViewController {
     // MARK: - Subtypes
     private enum Constants {
         static let inset: CGFloat = 15.0
@@ -29,6 +29,8 @@ final class DataReportViewController: UIViewController {
         let enclosingView: UIView = .init()
         enclosingView.backgroundColor = Colors.main?.withAlphaComponent(0.8)
         enclosingView.translatesAutoresizingMaskIntoConstraints = false
+        enclosingView.layer.cornerRadius = Constants.titleViewCornerRadius
+        enclosingView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
 
         let titleLabel: UILabel = .init()
         titleLabel.font = .systemFont(ofSize: 18.0, weight: .semibold)
@@ -54,13 +56,6 @@ final class DataReportViewController: UIViewController {
         super.viewDidLoad()
 
         setupView()
-    }
-
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-
-        titleView.layer.cornerRadius = Constants.titleViewCornerRadius
-        titleView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
     }
 
     private func makeLabel() -> UILabel {

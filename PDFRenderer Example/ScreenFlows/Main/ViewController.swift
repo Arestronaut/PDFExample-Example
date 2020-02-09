@@ -49,6 +49,15 @@ class ViewController: UIViewController {
         ].forEach { $0.isActive = true }
     }
 
+    private func didRenderPDF(from viewController: UIViewController, _ data: Data) {
+        viewController.dismiss(animated: true) {
+            let activityViewCtrl: UIActivityViewController = .init(activityItems: [data], applicationActivities: nil)
+            activityViewCtrl.view.tintColor = Colors.main
+
+            self.present(activityViewCtrl, animated: true, completion: nil)
+        }
+    }
+
     @objc
     private func touchUpInsideGenerateReportButton() {
         let mockGraphData = GraphData.mockEntries
@@ -66,6 +75,9 @@ class ViewController: UIViewController {
 
         let reportViewController = DataReportViewController()
         reportViewController.viewModel = viewModel
+        reportViewController.onDidRenderView { [weak self] viewController, data in
+            self?.didRenderPDF(from: viewController, data)
+        }
 
         present(reportViewController, animated: true, completion: nil)
     }

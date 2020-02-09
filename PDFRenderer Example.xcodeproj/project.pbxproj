@@ -20,6 +20,7 @@
 		DE8DDFCF23F053D6008A6A24 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8DDFCE23F053D6008A6A24 /* Mock.swift */; };
 		DE8DDFD123F05552008A6A24 /* DataReportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8DDFD023F05552008A6A24 /* DataReportViewModel.swift */; };
 		DE8DDFD323F056EB008A6A24 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8DDFD223F056EB008A6A24 /* Colors.swift */; };
+		DE8DDFD623F06458008A6A24 /* PDFRenderableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8DDFD523F06458008A6A24 /* PDFRenderableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		DE8DDFCE23F053D6008A6A24 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
 		DE8DDFD023F05552008A6A24 /* DataReportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataReportViewModel.swift; sourceTree = "<group>"; };
 		DE8DDFD223F056EB008A6A24 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		DE8DDFD523F06458008A6A24 /* PDFRenderableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFRenderableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		DE79294823F0215400AF1FF7 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				DE8DDFD423F0643E008A6A24 /* Utility */,
 				DE79294423F020EE00AF1FF7 /* Data */,
 				DE79294923F0215A00AF1FF7 /* Views */,
 			);
@@ -149,6 +152,14 @@
 				DE8DDFCC23F03E34008A6A24 /* ReportGraphView.swift */,
 			);
 			path = ReportGraph;
+			sourceTree = "<group>";
+		};
+		DE8DDFD423F0643E008A6A24 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				DE8DDFD523F06458008A6A24 /* PDFRenderableViewController.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +246,7 @@
 				DE8DDFCF23F053D6008A6A24 /* Mock.swift in Sources */,
 				DE79294B23F0219600AF1FF7 /* Strings.swift in Sources */,
 				DE79294323F0206900AF1FF7 /* DataReportViewController.swift in Sources */,
+				DE8DDFD623F06458008A6A24 /* PDFRenderableViewController.swift in Sources */,
 				DE8DDFD123F05552008A6A24 /* DataReportViewModel.swift in Sources */,
 				DE4D3D4823E8BFB8002A99B5 /* SceneDelegate.swift in Sources */,
 			);
